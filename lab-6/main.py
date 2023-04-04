@@ -23,6 +23,7 @@ if __name__ == '__main__':
         print(f'hostname: {e.group(1)}')
         print(f'domain name: {e.group(2)}')
         print(f'top level domain: {e.group(3)}')
+        print(f'all: {e.group(1,2, 3)}')
     else: 
         print('None: no match object')
 
