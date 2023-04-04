@@ -16,8 +16,8 @@ def autoCorrect(repeated):
 
 
 if __name__ == "__main__":
-	txt = "the thethethe quick brown fox jumps overoveroverover the lazy dog"
-	pattern = re.compile(r'\b(\w+?)\s?\1+', re.I)
+	txt = "the the the quick brown fox jumps overoveroverover the the lazy dog"
+	pattern = re.compile(r'\b([\w ]+?)\1+', re.I)
 	x = pattern.subn(string=txt, repl=autoCorrect)
 	print(x)
 	pair(txt)
