@@ -7,8 +7,8 @@ def pair(txt):
 	"""
 	this funciton finds any repeated word
 	"""
-	for m in re.finditer(r'\b(\w+?)\s?\1+', txt, re.I):
-		print(f'{m.start()}-{m.end()}: {m.group(1)}')
+	for m in re.finditer(r'\b([\w ]+?)\1+', txt, re.I):
+		print(f'{m.start()}-{m.end()}: {m.group(0)}')
 
 
 def autoCorrect(repeated):
