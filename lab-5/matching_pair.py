@@ -12,12 +12,16 @@ def pair(txt):
 
 
 def autoCorrect(repeated):
-	return repeated.group(1)
+    return repeated.group(1)
 
 
 if __name__ == "__main__":
 	txt = "the the the quick brown fox jumps overoveroverover the the lazy dog"
-	pattern = re.compile(r'\b([\w ]+?)\1+', re.I)
-	x = pattern.subn(string=txt, repl=autoCorrect)
+	pattern = re.compile(r'\b([\w\s]+?)\1+', re.I)
+	x = pattern.sub(string=txt, repl=autoCorrect)
 	print(x)
 	pair(txt)
+
+	# alternate solution: you can use regex as a repl argument
+	y = re.sub(r'\b(\w+?)(\s?\1)+\b', r'\1', txt)
+	print(y)
