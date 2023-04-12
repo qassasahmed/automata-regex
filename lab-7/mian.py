@@ -1,7 +1,6 @@
 #lookahead
 #lookbehind
 #named group
-
 import re
 
 
@@ -20,7 +19,7 @@ text = 'welcome ali'
 m3 = re.search(pat, text)
 print(m3)
 #negative lookbehind (?>!pattern)
-#limitation: look-behind requires fixed-width pattern
+#limitation: lookbehind requires fixed-width pattern
 #lookahead and lookbehind are noncapturing groups
 m4 = re.search(r'(?<!welcome).+', text)
 print(m4)
