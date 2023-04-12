@@ -1,6 +1,5 @@
 #lookahead
 #lookbehind
-
 #named group
 
 import re
@@ -28,9 +27,9 @@ print(m4)
 
 
 #named group: (?P<name>pattern)
-text2 = 'blue blue xdelete thisx extra blue'
-pat3 = re.compile(r'(?P<del>x).+?(?P=del)(?#\1 can be used too)')
-res = re.sub(pat3, repl='\g<del>', string=text2 )
+text2 = 'blue blue xdelete thisx blue'
+pat3 = re.compile(r'(?P<del>x).+(?P=del)(?#\1 can be used too)')
+res = re.sub(pat3, repl='', string=text2 )
 print(res)
 
 #a- \1
