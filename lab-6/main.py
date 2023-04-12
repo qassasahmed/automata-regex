@@ -1,6 +1,3 @@
-#the x flag
-#the m flag
-#backrefrences
 import re
 
 

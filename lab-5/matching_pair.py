@@ -1,5 +1,3 @@
-#sub
-#greedy
 import re
 
 
@@ -23,5 +21,5 @@ if __name__ == "__main__":
 	pair(txt)
 
 	# alternate solution: you can use regex as a repl argument
-	y = re.sub(r'\b(\w+?)(\s?\1)+\b', r'\1', txt)
+	y = re.sub(r'\b(\w+?)(\s?\1)+\b', repl = r'\1', string=txt)
 	print(y)
