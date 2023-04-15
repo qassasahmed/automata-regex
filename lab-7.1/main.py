@@ -14,7 +14,7 @@ if __name__ == '__main__':
     print(rexamples.check_string4('abb')) # invalid
 
 
-    # 25.  Python program to remove the characters which have odd index values (chars at even positions) of a given string.
+    # 25. Python program to remove the characters which have odd index values (chars at even positions) of a given string.
     ## i.e., 'Python' -> 'Pto' or '123456789' -> '13579'
     print(rexamples.remove_chars2('Python')) # Pto
     print(rexamples.remove_chars2('123456789')) # 13579
