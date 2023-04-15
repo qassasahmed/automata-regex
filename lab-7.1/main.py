@@ -12,3 +12,5 @@ if __name__ == '__main__':
 
     # 4. Test a Python program that matches a string that has an a followed by zero or one 'b'.
     print(rexamples.check_string4('abb')) # invalid
+
+    print(rexamples.remove_chars2('12345678'))
