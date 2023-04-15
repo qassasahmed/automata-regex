@@ -144,7 +144,11 @@ def remove_chars(string):
     return pattern.sub('', string)
 
 
-
+# 25. Write a Python program to remove the characters which have odd index values (chars at even positions) of a given string.
+## i.e., 'Python' -> 'Pto' or '123456789' -> '13579'
+def remove_chars2(string):
+    pattern = re.compile(r'(.)(.)')
+    return pattern.sub(r'\1', string)
 
 
 # 26. Write a Python program to return all the words the occurs twice  within a string.
