@@ -2,7 +2,6 @@ import re
 
 
 # write a Python program...
-
 # 1.  to check that a string (contains only) a certain set of characters (in this case a-z, A-Z and 0-9).
 def check_string1(string):
     pattern = re.compile(r'^[a-zA-Z0-9]+$')
@@ -88,7 +87,7 @@ def check_string14(string):
 
 
 # 15.  to remove leading zeros from an IP address.
-def remove_zeros15(string):
+def remove_zeros(string):
     pattern = re.compile(r'\b0+(\d+)')
     return pattern.sub(r'\1', string)
 
@@ -161,7 +160,10 @@ def count_words(string):
 
 
 if __name__ == '__main__':
-    print("rexamples.py: these functions aren't tested, but they should work.")
+    print("rexamples.py: these functions aren't tested, but they should work.\n" * 3)
+    print("navigate to main.py to run your tests.\n" * 5)    
+
+
 
 
 
