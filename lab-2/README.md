@@ -58,6 +58,16 @@ S → aSa/aBa, A → Ba/b
 **Hint**: Is the production rule proper?
 
 ## 3. The Chomsky Hierarchy
+It is hierarchy of formal languages based on the properties of the grammars
+required to generate the languages. Chomsky classified the grammar into **four** types depending on the _production_ rule:  
+
+| Grammar  | Language                   | Machine Format          |
+|:---------|:---------------------------|:------------------------|
+| _Type 0_ | Unrestricted Language      | Turing Machine          |
+| _Type 1_ | Context-sensitive language | Linear bounded automata |
+| _Type 2_ | Context-free language      | Push down automata      |
+| _Type 3_ | Regular Expression         | Finite automata (FSM)   |
+
 ![](figs/img.png "The Chomsky Hierarchy")
 
 ### Example 5
@@ -84,9 +94,9 @@ The two grammars given generate a language over the alphabet (x, y, z)
 Which of the following choices describe the properties satisfied by the strings in these languages?  
 
 1. **G1:** No y appears before any x,
-**G2:** Every x is followed by at least one y
+**G2:** Every x is followed by at least one y.
 2. **G1:** No y appears before any x,
-**G2:** No x appears before any y
+**G2:** No x appears before any y.
 3. **G1:** No y appears after any x,
 **G2:** Every x is followed by at least one y.
 4. **G1:** No y appears after any x,
