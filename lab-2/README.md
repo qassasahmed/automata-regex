@@ -14,4 +14,9 @@ A grammar (G) consists of four tuples:
 * **V<sub>N</sub>**: Set of Non-terminals.
 * **∑**: Set fo terminals.
 *  **P**: Production rule.
-* **S**: Start Symbol.
+* **S**: Start Symbol.  
+
+_**Non-terminal (V<sub>N</sub>)**_ symbols are those symbols which can be replaced multiple times.  
+_**Terminal symbols (∑)**_ are those symbols which cannot be replaced further.  
+In most of the cases, a grammar is represented by **only the production rules**.
+
