@@ -10,7 +10,7 @@ grammar for that programming language.**
 ## 2. Grammar
 A grammar is a _**set of rules**_ to defne a **valid** sentence in any language.  
 A grammar (G) consists of four tuples:  
-**G = {V<sub>N</sub>, ∑, P, S}**
+**G = {V<sub>N</sub>, ∑, P, S}** , where
 * **V<sub>N</sub>**: Set of Non-terminals.
 * **∑**: Set fo terminals.
 *  **P**: Production rule.
