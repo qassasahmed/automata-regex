@@ -12,7 +12,7 @@ A grammar is a _**set of rules**_ to defne a **valid** sentence in any language.
 A grammar (G) consists of four tuples:  
 
 ![](figs/img.png "A grammar (G) consists of four tuples")
-* ** V <sub>N</sub> **: Set of Non-terminals.
+* **V <sub>N</sub>**: Set of Non-terminals.
 * **∑**: Set fo terminals.
 *  **P**: Production rule.
 * **S**: Start Symbol.
