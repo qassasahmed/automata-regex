@@ -1,6 +1,21 @@
 # Lab (2) Notes
 Ahmed M. Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
+<!-- TOC -->
+* [Lab (2) Notes](#lab-2-notes)
+  * [1. Introduction](#1-introduction)
+  * [2. Grammar](#2-grammar)
+    * [Example 1](#example-1-)
+          * [Solution](#solution-)
+    * [Example 2](#example-2)
+          * [Solution](#solution)
+    * [Example 3: Try it yourself](#example-3-try-it-yourself)
+    * [Example 4: Try it yourself](#example-4-try-it-yourself)
+  * [3. The Chomsky Hierarchy](#3-the-chomsky-hierarchy)
+    * [Example 5](#example-5)
+    * [Example 6](#example-6)
+    * [Example 7](#example-7)
+<!-- TOC -->
 ---
 ## 1. Introduction
 In computer science, to communicate with the computer hardware, the user needs some languages for programming purposes, such as C#, Python, and Java. **For constructing the languages, there are some rules to be followed. The rules are called the
@@ -67,8 +82,6 @@ required to generate the languages. Chomsky classified the grammar into **four**
 | _Type 1_ | Context-sensitive language | Linear bounded automata |
 | _Type 2_ | Context-free language      | Push down automata      |
 | _Type 3_ | Regular Expression         | Finite automata (FSM)   |
-
-![](figs/img.png "The Chomsky Hierarchy")
 
 ### Example 5
 In the given _**context-free grammar**_, S is the start symbol, a and b are terminals, and ε denotes the
