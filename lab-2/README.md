@@ -2,6 +2,15 @@
 Ahmed M. Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
 ---
+## 0. Review on Lab (1)
+
+| Collection | Mutable | Ordered | Unique    |
+|------------|---------|---------|-----------|
+| List       | Yes     | Yes     | No        |
+| Tuple      | No      | Yes     | No        |
+| Set        | No      | No      | Yes       |
+| Dictionary | Yes     | No      | Keys only |
+
 ## 1. Introduction
 In computer science, to communicate with the computer hardware, the user needs some languages for programming purposes, such as C#, Python, and Java. **For constructing the languages, there are some rules to be followed. The rules are called the
 grammar for that programming language.**
@@ -164,3 +173,4 @@ pattern_plus = re.compile('ab+c')
 print(re.fullmatch(pattern_plus, "abbbc"))
 print(re.fullmatch(pattern_plus, "ac"))
 ```
+## Thank You
