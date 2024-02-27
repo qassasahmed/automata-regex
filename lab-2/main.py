@@ -1,14 +1,11 @@
 import re
 
-str = 'blue ahmed96ma@google.com blue blue'
-match = re.search(r'[\w.]+@[\w.]+', str)
-print(f'{match.group()} was found' if match else 'no match')
+#Here we used the * meta character
+pattern_star = re.compile('ab*c')
+print(re.fullmatch(pattern_star, "abbbc"))
+print(re.fullmatch(pattern_star, "ac"))
 
-
-def accept_language(string):
-    language_pattern = re.fullmatch("(aa)*b+", string)
-    return "accepted" if language_pattern else "not accepted"
-
-
-if __name__ == '__main__':
-    print(accept_language("aabb"))
+# Here we used the + meta character
+pattern_plus = re.compile('ab+c')
+print(re.fullmatch(pattern_plus, "abbbc"))
+print(re.fullmatch(pattern_plus, "ac"))

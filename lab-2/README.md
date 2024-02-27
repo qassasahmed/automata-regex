@@ -108,20 +108,59 @@ In automata theory, Regular expression describes patterns of strings that can be
 * Metacharacters do not match themselves.
 * Special sequences beginning with '\'.
 
-| Character | Description                   |
-|:----------|:------------------------------|
-| .         | any character except newline. |
-| +         | one or more occurrence.       |
-| *         | zero or more occurrence.      |
-| ^         | start with                    |
-| $         | end with                      |
-| ?         | zero or more occurrence.      |
-| { }       | exact number of occurrence.   |
-| \|        | either or                     |
-| ()        | capture and group             |
+| Meta Characters | Description                   |
+|:----------------|:------------------------------|
+| .               | any character except newline. |
+| +               | one or more occurrence.       |
+| *               | zero or more occurrence.      |
+| ^               | starts with                   |
+| $               | ends with                     |
+| ?               | zero or more occurrence.      |
+| { }             | exact number of occurrence.   |
+| \|              | either or                     |
+| ()              | capture and group             |
 
 
+| Special Characters | Description                   |
+|:-------------------|:------------------------------|
+| \w                 | any alphanumeric char         |
+| \W                 | any non-alphanumeric          |
+| \d                 | any decimal digits            |
+| \D                 | any non-digit char            |
+| \s                 | any white space char          |
+| \S                 | any non-white space char      |
+| \A                 | the beginning of a string     |
+| \Z                 | the end of a string           |
+| \b                 | the beginning/end of word     |
+| \B                 | **not** beginning/end of word |
+
+### Repeating Strings
+* The `+` means one or more strings: **"ab+c"** can be **"abc"** or **"abbc"** or **"abbbbc"** but not **"ac"**  .
+Here, L(G) = ab<sup>n</sup>c , n > 0.
+* The `*` means zero or more strings: **"ab*c"** can be **"abc"** or **"abbc"** or **"abbbbc"** and **"ac"**.  
+Here, L(G) = ab<sup>n</sup>c , n ≥ 0.
+### Compiling Regex
+Regular expressions are compiled into pattern objects, which have methods for various operations such as searching for pattern matches or performing string substitutions.
+```python
+import re
+pattern = re.compile('ab*c')
+print(pattern)
+```
+### Performing Matches
+check [code example](main.py)
+1. Using the * meta character
 ```python
 import re
 
+pattern_star = re.compile('ab*c')
+print(re.fullmatch(pattern_star, "abbbc"))
+print(re.fullmatch(pattern_star, "ac"))
+```
+2. Using the + meta character
+```python
+import re
+
+pattern_plus = re.compile('ab+c')
+print(re.fullmatch(pattern_plus, "abbbc"))
+print(re.fullmatch(pattern_plus, "ac"))
 ```
