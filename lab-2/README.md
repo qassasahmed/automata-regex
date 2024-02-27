@@ -148,7 +148,7 @@ print(pattern)
 ```
 ### Performing Matches
 check [code example](main.py)
-1. Using the * meta character
+1. Using the `*` meta character
 ```python
 import re
 
@@ -156,7 +156,7 @@ pattern_star = re.compile('ab*c')
 print(re.fullmatch(pattern_star, "abbbc"))
 print(re.fullmatch(pattern_star, "ac"))
 ```
-2. Using the + meta character
+2. Using the `+` meta character
 ```python
 import re
 
