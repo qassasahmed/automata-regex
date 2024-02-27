@@ -124,7 +124,7 @@ In automata theory, Regular expression describes patterns of strings that can be
 | *               | zero or more occurrence.      |
 | ^               | starts with                   |
 | $               | ends with                     |
-| ?               | zero or more occurrence.      |
+| ?               | zero or one occurrence.      |
 | { }             | exact number of occurrence.   |
 | \|              | either or                     |
 | ()              | capture and group             |
