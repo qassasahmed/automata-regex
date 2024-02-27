@@ -100,17 +100,28 @@ Which of the following choices describe the properties satisfied by the strings 
 4. **G1:** No y appears after any x,
 **G2:** Every y is followed by at least one x.
 
-## 4. Brief Introduction to Python's re Module 
+## 4. Brief Introduction to Python's re Module
+[Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)  
+In automata theory, Regular expression describes patterns of strings that can be recognized by **finite automata**, which are mathematical models of computation used in computer science. Regex are  available in Python using the **re** module, which can be used to match, validate or modify strings.  
+
+* Most letters and characters will simply match themselves.
+* Metacharacters do not match themselves.
+* Special sequences beginning with '\'.
+
+| Character | Description                   |
+|:----------|:------------------------------|
+| .         | any character except newline. |
+| +         | one or more occurrence.       |
+| *         | zero or more occurrence.      |
+| ^         | start with                    |
+| $         | end with                      |
+| ?         | zero or more occurrence.      |
+| { }       | exact number of occurrence.   |
+| \|        | either or                     |
+| ()        | capture and group             |
+
+
 ```python
 import re
 
-
-def accept_language(string):
-    language_pattern = re.fullmatch("(aa)*b+", string)
-    return "accepted" if language_pattern else "not accepted"
-
-
-if __name__ == '__main__':
-    print(accept_language("aabb"))
 ```
-
