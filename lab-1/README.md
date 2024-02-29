@@ -122,14 +122,16 @@ A cardinal number of a set `A` denoted as `n(A)`  refers to the number of elemen
 ```python
 a = {i for i in range(50)}
 n_a = len(a)
-print(n_a)
+print(n_a) # output: 50
 ```
 
 # Equivalence Relation
-Formal Languages and Automata: Equivalence relations are used in formal language theory and automata theory to define concepts like equivalence of regular expressions, indistinguishability of states in finite automata, and minimization of finite state machines.
+Equivalence relations are used in formal language theory and automata theory to define concepts like equivalence of regular expressions, indistinguishability of states in finite automata, and minimization of finite state machines.
 - `∀x ∈ A, x∼x`  
 - `∀x,y ∈ A, x∼y ⟹ y∼x`  
 - `∀x, y, z ∈A, (x∼y∧y∼z) ⟹ x∼z`  
+
+# Thank You
 
 
 
