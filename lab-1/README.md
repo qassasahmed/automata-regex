@@ -1,5 +1,5 @@
 # Lab (1) Notes
-Ahmed Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
+Ahmed M. Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
 ---
 # Basic Set Theory
