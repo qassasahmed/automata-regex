@@ -17,6 +17,7 @@ The main usefulness is in **lexical analyser** and syntax error. **But what is l
 Lexical Analysis is the first phase of the compiler also known as a scanner. It converts the High level input program into a sequence of _Tokens_.
 [Read this article](https://www.geeksforgeeks.org/introduction-of-lexical-analysis/) for more information. Example:
 ```C
+// This is a loop
 while(a >= b){
     a = a - 2;
 }
