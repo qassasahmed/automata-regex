@@ -15,14 +15,15 @@ Chomsky structured a hierarchy of formal languages based on the properties of th
 # 1 Use of Automata
 The main usefulness is in **lexical analyser** and syntax error. **But what is lexical analyser**?  
 Lexical Analysis is the first phase of the compiler also known as a scanner. It converts the High level input program into a sequence of _Tokens_.
-[Read this article](https://www.geeksforgeeks.org/introduction-of-lexical-analysis/) for more information.
-Example
+[Read this article](https://www.geeksforgeeks.org/introduction-of-lexical-analysis/) for more information. Example:
 ```C
 int main()
 {
-  // 2 variables
-  int a, b;
-  a = 10;
- return 0;
+    // 2 variables
+    int a, b;
+    a = 10;
+    return 0;
 }
 ```
+
+
