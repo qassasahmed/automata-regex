@@ -17,8 +17,12 @@ The main usefulness is in **lexical analyser** and syntax error. **But what is l
 Lexical Analysis is the first phase of the compiler also known as a scanner. It converts the High level input program into a sequence of _Tokens_.
 [Read this article](https://www.geeksforgeeks.org/introduction-of-lexical-analysis/) for more information.
 Example
-```C#
-static int sum(int n1, int n2){
-    return n1 + n2
+```C
+int main()
+{
+  // 2 variables
+  int a, b;
+  a = 10;
+ return 0;
 }
 ```
