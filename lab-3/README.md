@@ -23,14 +23,14 @@ while(a >= b){
 }
 ```
 
-| Lexemes | Tokens     | Lexemes | TOKENS     |
-|:--------|:-----------|---------|------------|
-| while   | WHILE      | a       | IDENTIFIER |
-| (       | LAPREN     | =       | ASSIGNMENT |
-| a       | IDENTIFIER | a       | IDENTIFIER |
-| >=      | COMPARISON | –       | ARITHMETIC |
-| b       | IDENTIFIER | 2       | INTEGER    |
-| )       | RPREN      | ;       | SEMICOLON  |
+| Lexemes | Tokens     | Lexemes  | TOKENS      |
+|:--------|:-----------|:---------|:------------|
+| while   | WHILE      | a        | IDENTIFIER  |
+| (       | LAPREN     | =        | ASSIGNMENT  |
+| a       | IDENTIFIER | a        | IDENTIFIER  |
+| >=      | COMPARISON | –        | ARITHMETIC  |
+| b       | IDENTIFIER | 2        | INTEGER     |
+| )       | RPREN      | ;        | SEMICOLON   |
 
 
 
