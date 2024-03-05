@@ -91,8 +91,9 @@ This string will **not** be accepted. Since the last symbol is `1` and clearly t
 | 1 | q0 | **1**111 |
 | 2 | q3 |  **1**11 |
 | 3 | q3 |   **1**1 |
-| 4 | q3 |    **1** | 
-| 5 | q3 |        - |  
+| 4 | q3 |    **1** |
+| 5 | q3 |        - |
+
 Since the string is completely eliminated at `q3` which is not a final state. The string `1111` will be rejected ❌. Actually, any string ending with `1` will be rejected.
 
 
