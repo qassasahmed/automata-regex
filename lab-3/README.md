@@ -56,9 +56,9 @@ Non-deterministic finite automata  NFA is a finite automaton where, for some cas
 
 # 4. Examples
 ## Example 1: check whether the stings accepted by the given FA, and determine whether it is an DFA or NFA.
-* string 1: **0111100**
-* string 2: **11111**
-* string 3: **11010**  
+* string 1: `0111100`
+* string 2: `11111`
+* string 3: `11010`  
 
 ![img.png](img.png)  
 
@@ -68,7 +68,7 @@ Non-deterministic finite automata  NFA is a finite automaton where, for some cas
 
 ----
 ###### Solution 
-string 1: **0111100**
+string 1: `0111100`
 
 | δ | Q  |           Σ |
 |:--|:---|------------:|
@@ -81,7 +81,20 @@ string 1: **0111100**
 | 7 | q2 |       **0** |
 | 8 | q2 |           - |
 
-Since the string is completely eliminated, and we have reached a final state (q2). **This String is accepted** ✅.
+Since the string is completely eliminated, and we have reached a final state (q2). **the string `0111100` is accepted** ✅.  
+
+string 2: `1111`   
+This string will **not** be accepted. Since the last symbol is `1` and clearly this FA accepts only strings ending with `0`. Let's do it step by step.
+
+| δ | Q  |        Σ |
+|:--|:---|---------:|
+| 1 | q0 | **1**111 |
+| 2 | q3 |  **1**11 |
+| 3 | q3 |   **1**1 |
+| 4 | q3 |    **1** | 
+| 5 | q3 |        - |  
+Since the string is completely eliminated at `q3` which is not a final state. The string `1111` will be rejected ❌. Actually, any string ending with `1` will be rejected.
+
 
 
 
