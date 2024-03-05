@@ -135,6 +135,10 @@ Construct a DFA from the given NFA.
 | E  | F | E |
 | F  | E | F |
 
+![img_7.png](img_7.png)
+
+## Example 3
+
 
 
 
