@@ -62,7 +62,7 @@ Non-deterministic finite automata  NFA is a finite automaton where, for some cas
 ![img.png](img.png)
 ----
 ###### Notes
-The symbol ![img_5.png](img_5.png)  refers to the start (initial) state while final state is represented by ![img_6.png](img_6.png)  
+# The symbol ![img_5.png](img_5.png)  refers to the start (initial) state while final state is represented by ![img_6.png](img_6.png)  .
 
 ----
 ###### Solution 
