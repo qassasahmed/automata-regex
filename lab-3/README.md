@@ -46,8 +46,7 @@ M = {Q, Σ, δ, q<sub>0</sub>, F}
 * **F**: Finite non-empty set of final states.
 
 # 3. FA Types: DFA and NFA
-A string is declared accepted by an FA if the string is finished and the machine has reached a final.
-state.
+A string is declared accepted by an FA if the string is finished and the machine has reached a final state.
 ## DFA  
 DFA is a finite automata where, for all cases, when a single input is given to a single state, the  **machine goes to a single state**, i.e., all the moves of the machine can be uniquely determined by the present state and the present input symbol.
 
@@ -137,7 +136,17 @@ Construct a DFA from the given NFA.
 
 ![img_7.png](img_7.png)
 
-## Example 3
+## Example 3 (Problem 4): Try it yourself
+Convert the following NFA to DFA.
+
+| Q     | 0      | 1      |
+|-------|--------|--------|
+| -> q1 | q0, q1 | q0, q2 |
+|       |        |        |
+|       |        |        |
+|       |        |        |
+|       |        |        |
+
 
 
 
