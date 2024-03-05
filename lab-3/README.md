@@ -96,6 +96,44 @@ This string will **not** be accepted. Since the last symbol is `1` and clearly t
 
 Since the string is completely eliminated at `q3` which is not a final state. The string `1111` will be rejected ❌. Actually, any string ending with `1` will be rejected.
 
+string: `11010`  
+
+| δ | Q  |         Σ |
+|:--|:---|----------:|
+| 1 | q0 | **1**1010 |
+| 2 | q3 |  **1**010 |
+| 3 | q3 |   **0**10 |
+| 4 | q2 |    **1**0 |
+| 5 | q0 |     **0** |
+| 6 | q1 |         - |  
+
+Easy. `11010` is rejected ❌.
+## Example 2
+Construct a DFA from the given NFA.
+
+| Q     | 0      | 1  |
+|-------|--------|----|
+| -> q0 | q0, q1 | q2 |
+| q1    | q2     | q1 |
+| (q2)  | q1     | q2 |
+
+|    | Q*         | 0          | 1       |
+|---:|------------|------------|---------|
+|  A | [q0]       | [q0 q1]    | [q2]    |
+|  B | [q0 q1]    | [q0 q1 q2] | [q1 q2] |
+|  C | [q1 q2]    | [q1 q2]    | [q1 q2] |
+|  D | [q0 q1 q2] | [q0 q1 q2] | [q1 q2] |
+|  E | [q2]       | [q1]       | [q2]    |
+|  F | [q1]       | [q2]       | [q1]    |
+
+| Q* | 0 | 1 |
+|----|---|---|
+| A  | B | E |
+| B  | D | C |
+| C  | C | C |
+| D  | D | C |
+| E  | F | E |
+| F  | E | F |
 
 
 
