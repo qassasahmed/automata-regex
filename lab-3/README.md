@@ -58,15 +58,31 @@ Non-deterministic finite automata  NFA is a finite automaton where, for some cas
 ## Example 1: check whether the stings accepted by the given FA, and determine whether it is an DFA or NFA.
 * string 1: **0111100**
 * string 2: **11111**
-* string 3: **11010**
-![img.png](img.png)
+* string 3: **11010**  
+
+![img.png](img.png)  
+
 ----
 ###### Notes
-# The symbol ![img_5.png](img_5.png)  refers to the start (initial) state while final state is represented by ![img_6.png](img_6.png)  .
+# _The symbol ![img_5.png](img_5.png)  refers to the start (initial) state while final state is represented by ![img_6.png](img_6.png)_  .
 
 ----
 ###### Solution 
 string 1: **0111100**
+
+| δ | Q  |           Σ |
+|:--|:---|------------:|
+| 1 | q0 | **0**111100 |
+| 2 | q1 |  **1**11100 |
+| 3 | q2 |   **1**1100 |
+| 4 | q1 |    **1**100 |
+| 5 | q3 |     **1**00 |
+| 6 | q3 |      **0**0 |
+| 7 | q2 |       **0** |
+| 8 | q2 |           - |
+
+Since the string is completely eliminated, and we have reached a final state (q2). **This String is accepted** ✅.
+
 
 
 
