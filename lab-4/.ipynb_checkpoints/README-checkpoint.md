@@ -92,23 +92,23 @@ Construct Finite Automata equivalent to the Regular Expression:
 Note: we use top-down approach.  
 
 **STEP 1** We put our RE between 2 two states; start and final states.
-![](figs/img-1.png)
+![](figs/img-1.png)  
    
 **STEP 2** The `+` is converted to 2 branches to the same statas.
-![](figs/img-2.png)
+![](figs/img-2.png)  
 
 **STEP 3** The `dot` or concatination is converted to sequence of transitions between new states.  
-![](figs/img-3.png)  
+![](figs/img-3.png)   
 
-![](figs/img-4.png)
+![](figs/img-4.png)  
 
 **STEP 4** The `*` is converted to a loop.  
 
-![](figs/img-5.png)
+![](figs/img-5.png)  
 
 **STEP 5** Removing the `Λ` transitions.  
 
-![](figs/img-6.png)
+![](figs/img-6.png)  
 
 ## Conclustion
 The process of converting a RE into a FA can be summarized as a sequence of removing `+` and `dot` and `*` and `Λ` and adding corresponding transitions/states in their place.
@@ -129,12 +129,17 @@ Find the RE for the following:
 3. L = (0+1)*(00 + 01+10).
 4. L = (0+1)* (00+11) (0+1)*.
 
-## Solved Problem 8, 9, 10
-8. Construct an FA equivalent to the RE, `L = (a + b) + a(a + b)* (ab + ba)`. 
+## Solved Problem 8, 9, 10  
+
+8. Construct an FA equivalent to the RE, `L = (a + b) + a(a + b)* (ab + ba)`.  
+   
 ![](figs/img-9.png)
+
 10. Construct an FA equivalent to the RE, `L = (00 + 11)* 11 (0 + 1)*0`.
-![](figs/img-7.png)  
+    
+![](figs/img-7.png)    
 12. Construct an FA for the RE `10 + (0 + 11)0*1`.  
+
 ![](figs/img-8.png)
 # Assignment
 Solve Excercise 2, 3 and 6 on Chapter 5
