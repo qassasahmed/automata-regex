@@ -134,7 +134,7 @@ Find the RE for the following:
 12. Construct an FA for the RE `10 + (0 + 11)0*1`.  
 ![](figs/img-8.png)
 # Assignment
-Excercise 
+Solve Excercise 2, 3 and 6 on Chapter 5
 # Thank You
 
 
