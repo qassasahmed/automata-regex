@@ -47,7 +47,7 @@ print(m) # ['ac', '', 'bc', '', 'aabc', '', 'abc', '', 'c', '', 'a', 'b']
 reg_5 = re.compile("(00)*(11)*1") # Easy
 ```
 
-## Example 2 (5.2)discussed in Python
+## Example 2 (5.2) discussed in Python
 Built regular expression of the following:
 1. Any **combination** of a and b, **beginning with a and ending with b**.
 2. Any **combination** of a and b containing abb as a substring.
