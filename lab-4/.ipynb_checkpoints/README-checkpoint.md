@@ -98,13 +98,16 @@ Note: we use top-down approach.
 ![](figs/img-2.png)
 
 **STEP 3** The `dot` or concatination is converted to sequence of transitions between new states.  
-![](figs/img-3.png)
+![](figs/img-3.png)  
+
 ![](figs/img-4.png)
 
-**STEP 4** The `*` is converted to a loop.
+**STEP 4** The `*` is converted to a loop.  
+
 ![](figs/img-5.png)
 
-**STEP 5** Removing the `Λ` transitions.
+**STEP 5** Removing the `Λ` transitions.  
+
 ![](figs/img-6.png)
 
 ## Conclustion
@@ -134,7 +137,7 @@ Find the RE for the following:
 12. Construct an FA for the RE `10 + (0 + 11)0*1`.  
 ![](figs/img-8.png)
 # Assignment
-
+Solve Excercise 2, 3 and 6 on Chapter 5
 # Thank You
 
 
