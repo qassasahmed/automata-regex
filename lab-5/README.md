@@ -128,19 +128,19 @@ S → a**B** → aaB**B** → aaBb**S** → aa**B**bba → aaaB**B**bba → aaa*
 **Page 352**: Simplify the following CFG.  
 S → AaB | aaB  
 A → D  
-B → bbA/ε   
+B → bbA | ε   
 D → E  
 E → F  
 F → aS  
 * ***Remove Null Units***  
-S → AaB/aaB/Aa/aa
+S → AaB | aaB | Aa| aa
 A → D  
 B → bbA   
 D → E  
 E → F  
 F → aS   
 * ***Remove Unit Production***  
-S → AaB/aaB/Aa/aa  
+S → AaB | aaB | Aa | aa  
 A → aS   
 B → bbA     
 D → as  
@@ -148,7 +148,7 @@ E → aS
 F → aS   
 * ***Remove Useless Symboles***  
 *There is no non-generating symbols.*  
-S → AaB/aaB/Aa/aa  
+S → AaB | aaB | Aa | aa  
 A → aS   
 B → bbA   
 # 4 Concolusion
