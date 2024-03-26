@@ -64,14 +64,14 @@ We have discussed the `re.fullmatch` previously. It requires the whole string to
 
 ---
 
-# 2 Context Free Grammar CGF
+# 2 Context Free Grammar CFG
 **CFGs are more expressive than Finite Automata** , meaning they can describe a broader set of languages, including those that have nested structures or dependencies that cannot be captured by Finite Automata.
 
 Finite Automata are often used for tasks like lexical analysis in compilers, where patterns can be described using regular expressions and recognized efficiently using automata.  
 
 Context-Free Grammars are more suited for tasks like syntactic analysis in compilers, where the hierarchical structure of the language needs to be analyzed.
 
-## CGF Repersentation
+## CFG Repersentation
 Context-Free Grammars are often represented as a 4-tuple: **(V, Σ, R, S)**  
 In every production of a CFG, at the left hand side there is a single non-terminal.
 
@@ -119,7 +119,7 @@ S → a**B** → aaB**B** → aaBb**S** → aa**B**bba → aaaB**B**bba → aaa*
 ![](figs/tree.png)  
 ![](figs/parse-tree-p4.png)  
 
-# 3 CGF Simplification
+# 3 CFG Simplification
 1. Remove useless symbols
 2. Remove unit production
 3. Remove null production
