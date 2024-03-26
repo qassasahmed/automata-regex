@@ -89,7 +89,7 @@ Where
   
 **What about this production rule?**  
 S → AB  
-A → 011A | 01A | ε  
+A → 011A | 1A | ε  
 B → 01B | ε  
 
 ## Problem (1)  
@@ -133,7 +133,7 @@ D → E
 E → F  
 F → aS  
 * ***Remove Null Units***  
-S → AaB | aaB | Aa| aa
+S → AaB | aaB | Aa| aa  
 A → D  
 B → bbA   
 D → E  
